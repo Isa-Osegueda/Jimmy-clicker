@@ -1,24 +1,20 @@
 //variables
 
 var $score = 0;
+var $scoreClick = 1;
 var $scoreSecond=1;
-var $upJimmy;
-var $upDanilo;
-var $upLeiva;
-var $upSecond = 0;
 var $diploma = $( "#diploma");
 var $bonus = $( "#bonus");
 var $jimmy = $("#up-jimmy").find("div");
 var $jimmyCost = 50;
 var $jimmyBonus = 500;
-var $jimmyBonus2 = "+500";
 var $danilo = $("#up-danilo");
 var $leiva = $("#up-leiva");
 
 //aumento por click
 
 function scoreAccoun() {
-	$score++;
+	$score += $scoreClick;
 }
 
 $diploma.click(function() {
@@ -35,7 +31,9 @@ $jimmy.disabled = true;
 	function jimmy() {
 		$score -= $jimmyCost;
 		$score += $jimmyBonus;
-		alert("+500 ");
+		$scoreClick = 2;
+		$($bonus).html("+"+$jimmyBonus);
+		$("#bonus").fadeToggle(1500);
 
 		$jimmy.disabled = true;
 
@@ -49,13 +47,14 @@ $jimmy.disabled = true;
 	}
 		
 	},1000)
-
 	$jimmy.click(function() {
 	jimmy()
+
 
 	});
 
 //aumento por segundos
+
 setInterval(function () {
 	$score+=$scoreSecond;
 	$("#score").html($score);

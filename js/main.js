@@ -188,6 +188,7 @@ $leiva.prop("disabled", true);
 
 	$(".moto").click(function() {
 		motoBonus()
+		$habilitado.play();
 	});
 
 	//bug
@@ -215,6 +216,7 @@ $leiva.prop("disabled", true);
 
 	$(".bug").click(function() {
 		bugBonus()
+		$habilitado.play();
 	});
 
 	//beer
@@ -243,6 +245,7 @@ $leiva.prop("disabled", true);
 
 	$(".beer").click(function() {
 		beerBonus()
+		$habilitado.play();
 	});
 
 	//latigo
@@ -271,6 +274,7 @@ $leiva.prop("disabled", true);
 
 	$(".latigo").click(function() {
 		latigoBonus()
+		$habilitado.play();
 	});
          
  

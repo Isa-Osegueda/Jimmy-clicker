@@ -1,38 +1,108 @@
-clearFix:after {
-     visibility: hidden;
-     display: block;
-     font-size: 0;
-     content: " ";
-     clear: both;
-     height: 0;
+body {
+    background-color: #e1e4e2;
 }
-.clearFix { display: block; }
+
+h1 {
+    text-align: center;
+}
+
+h2 h3 {
+    padding-left: 5%;
+}
+
+p {
+
+    color: #e1e4e2;
+    font-size: 14px;
+    padding-left: 40%;
+    text-align: left;
+   
+}
+
+.clearFix { overflow: hidden; zoom: 1; }
 
 
 .wrapper{
     margin: 0 auto;
-    width: 500;
+    width: 1080px;
 }
 
-.up-jimmy > div {
+#bonus {
+    font-size: 40px;
+    color: #0b8952;
+    position: absolute;
+    left: 50%
+}
+
+.diploma-area {
+    float: left;
+    position: relative;
+}
+
+.diploma-animation {
+    color:  #000;
+    font-weight: bold;
+    font-size: 28px;
+    top: 7%;
+    left: 80%;
+    position: absolute;
+}
+
+.up-jimmy {
+    border-radius: 25px;
     margin-top:10px; 
-    height: 100px;
-    width:200px;
-    background-color: #250;
-    opacity: 0,5;
-}
-.up-danilo > div {
-    margin-top:10px;
-    height: 100px;
-    width:200px;
-    background-color: #054;
+    height: 110px;
+    width:350px;
+    background-color: #999;
+    display: block;
+    position: relative;
 }
 
-.up-leiva > div {
+.up-jimmy img {
+
+    position: absolute;
+    top: 6%;
+    left: 5%;
+    width: 100px
+}
+
+
+
+.up-danilo {
+    border-radius: 25px;
+    display: block;
     margin-top:10px;
-    height: 100px;
-    width:200px;
-    background-color: #086;
+    height: 110px;
+    width:350px;
+    background-color: #999;
+    position: relative;
+
+}
+
+.up-danilo img {
+
+    position: absolute;
+    top: 6%;
+    left: 5%;
+    width: 100px
+}
+
+.up-leiva {
+    border-radius: 25px;
+    display: block;
+    margin-top:10px;
+    height: 110px;
+    width:350px;
+    background-color: #999;
+    position: relative;
+}
+
+.up-leiva img {
+
+    position: absolute;
+    top: 6%;
+    left: 5%;
+    width: 100px
 }
 
 .game {
@@ -44,15 +114,51 @@ clearFix:after {
     float: right;
 }
 
-.diploma {
+#time{
+    margin-bottom: 62px;
+    width: 120px;
+   
+}
+.reloj{
     float: left;
+    font-size: 20px;
+    
 }
 
-#bonus {
-    color: #580;
-    display: hidden;
-    text-align: center;
-    margin: 0 auto;
+.moto {
+    padding-left: 20px;
+    width: 150px;
+    position: absolute;
+    left: 45%;
+    visibility: hidden;
+
+}
+
+.bug {
+    padding-left: 20px;
+    width: 150px;
+    position: absolute;
+    left: 45%;
+    visibility: hidden;
+
+}
+
+.beer {
+    padding-left: 20px;
+    width: 150px;
+    position: absolute;
+    left: 45%;
+    visibility: hidden;
+
+}
+
+.latigo {
+    padding-left: 20px;
+    width: 150px;
+    position: absolute;
+    left: 45%;
+    visibility: hidden;
+
 }
 
 
